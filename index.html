@@ -10,6 +10,81 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>EpiChris-Portfolio</title>
+        <style>
+            .education.section {
+                padding: 2rem 0;
+            }
+            
+            .education__container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .education__card {
+                background: #fff;
+                border-radius: 1rem;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                padding: 1.5rem;
+                transition: 0.3s;
+            }
+            
+            .education__left {
+                width: 10px;
+                background-color: #c49ef5;
+                border-radius: 1rem 0 0 1rem;
+                margin-right: 1rem;
+            }
+            
+            .education__content {
+                flex: 1;
+                position: relative;
+            }
+            
+            .education__title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 0;
+            }
+            
+            .education__school {
+                color: #555;
+                margin: 0.3rem 0;
+            }
+            
+            .education__score {
+                font-size: 0.9rem;
+                margin: 0.5rem 0;
+            }
+            
+            .education__bar {
+                background: #e0d4f9;
+                border-radius: 0.5rem;
+                height: 8px;
+                margin-top: 0.4rem;
+                position: relative;
+            }
+            
+            .education__bar span {
+                display: block;
+                height: 100%;
+                background: #9d74e3;
+                border-radius: 0.5rem;
+            }
+            
+            .education__year {
+                position: absolute;
+                right: 1.5rem;
+                top: 1.5rem;
+                background: #e5d7fc;
+                padding: 0.2rem 0.6rem;
+                border-radius: 0.8rem;
+                font-size: 0.8rem;
+            }
+        </style>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -140,6 +215,49 @@
                     <div>              
                         <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey that has equipped me with knowledge and skills in technology and engineering.</p>
+            
+                <div class="education__container bd-grid">
+            
+                    <div class="education__card">
+                        <div class="education__left"></div>
+                        <div class="education__content">
+                            <h3 class="education__title">B.E (ECE)</h3>
+                            <p class="education__school">SNS College of Engineering, Coimbatore</p>
+                            <p class="education__score">CGPA: <strong>8.87/10</strong></p>
+                            <div class="education__bar"><span style="width: 89%;"></span></div>
+                            <span class="education__year">2022–2026</span>
+                        </div>
+                    </div>
+            
+                    <div class="education__card">
+                        <div class="education__left"></div>
+                        <div class="education__content">
+                            <h3 class="education__title">Higher Secondary</h3>
+                            <p class="education__school">Cordite Factory Higher Secondary School, Nilgiris</p>
+                            <p class="education__score">Percentage: <strong>81%</strong></p>
+                            <div class="education__bar"><span style="width: 81%;"></span></div>
+                            <span class="education__year">2022</span>
+                        </div>
+                    </div>
+            
+                    <div class="education__card">
+                        <div class="education__left"></div>
+                        <div class="education__content">
+                            <h3 class="education__title">Secondary</h3>
+                            <p class="education__school">Defence Employees Matriculation School, Nilgiris</p>
+                            <p class="education__score">Percentage: <strong>88%</strong></p>
+                            <div class="education__bar"><span style="width: 88%;"></span></div>
+                            <span class="education__year">2020</span>
+                        </div>
+                    </div>
+            
                 </div>
             </section>
 
